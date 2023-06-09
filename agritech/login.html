@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Login and Registration form</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <img src="https://pl.respaper.com/160/s.a5641472cb.jpg" align="center"  class="center" hight="100" width="100" />
+    <h3 style="color:white"> AGRIGROWTH</h3>
+<div class="login-page">
+<div class="form">
+<form class="register-form">
+<input type="text" placeholder="user name"/>
+<input type="text" placeholder="password"/>
+<input type="email-id" placeholder="email id"/>
+<button>Create</button>
+<p class="message">Already Registered? <a href="#"> Login</a></p>
+</form>
+<form class="login-form">
+<input type="text" placeholder="user name"/>
+<input type="password" placeholder="password"/>
+<button>login</button>
+<p class="message">Not Registered?<a href="#">Register</a></p>
+</form>
+</div>
+</div>
+<script src='https://code.jquery.com/jquery-3.6.1.min.js'>
+</script>
+<script>
+$('.message a').click(function(){
+$('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>
